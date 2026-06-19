@@ -2,14 +2,14 @@
 
 **An LLM agent that takes action across enterprise systems - with the guardrails that make it trustworthy.**
 
-This is API-led integration — the kind of work I did for years in MuleSoft — except now an
+This is API-led integration, the kind of work I did for years in MuleSoft except now an
 LLM decides *which* systems to call and *in what order*. The model plans; it isn't a hard-coded
 flow. On top of that I added the controls an agent actually needs before a business will let it
 touch production systems: **idempotency, retries with backoff, human-in-the-loop on risky
 actions, and a full audit log of every decision and tool call.**
 
 I've spent ~8 years building and operating integrations on MuleSoft and Azure, and the failure
-modes here aren't theoretical — duplicate writes on retried deliveries, transient 5xx/429s from
+modes here aren't theoretical duplicate writes on retried deliveries, transient 5xx/429s from
 downstream APIs, and "who approved this?" audit gaps are exactly the things that page you at 2am.
 This project puts an agent in the orchestrator seat and keeps those controls in place.
 
@@ -39,8 +39,6 @@ The LLM chooses each step via tool/function calling. Nothing about the sequence 
 <img width="1848" height="470" alt="image" src="https://github.com/user-attachments/assets/62e03da6-75bc-4c57-b9bd-9f13029238c8" />
 
 <img width="1773" height="623" alt="image" src="https://github.com/user-attachments/assets/666c16b0-d419-4d06-9405-a91e501679b4" />
-
-
 
 ---
 
@@ -193,5 +191,5 @@ app/
   policy.py          pure, testable business rules
   models.py / db.py  SQLAlchemy async models + engine
 tests/               unit + end-to-end integration
-Dockerfile, docker-compose.yml, requirements.txt, .env.example
+Dockerfile, docker-compose.yml, requirements.txt, .env
 ```
