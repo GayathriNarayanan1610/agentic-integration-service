@@ -26,9 +26,21 @@ When a support request arrives, the agent:
 
 The LLM chooses each step via tool/function calling. Nothing about the sequence is hard-coded.
 
-```
-
 `agent` = the LLM. `tools` = safe reads. `approval` = the gated write that can pause for a human.
+
+<img width="1832" height="527" alt="image" src="https://github.com/user-attachments/assets/85fcfa00-3aa6-46c9-abdd-ec6d1d674c17" />
+
+<img width="1830" height="802" alt="image" src="https://github.com/user-attachments/assets/1b9dda58-2d15-4209-83d7-6102bdaa3fc6" />
+
+<img width="1828" height="552" alt="image" src="https://github.com/user-attachments/assets/abbe9c4c-4a7f-45f8-ba5b-5adbff44fbb9" />
+
+<img width="1796" height="556" alt="image" src="https://github.com/user-attachments/assets/e89568c4-e6f6-488c-964c-4a95f3982f86" />
+
+<img width="1848" height="470" alt="image" src="https://github.com/user-attachments/assets/62e03da6-75bc-4c57-b9bd-9f13029238c8" />
+
+<img width="1773" height="623" alt="image" src="https://github.com/user-attachments/assets/666c16b0-d419-4d06-9405-a91e501679b4" />
+
+
 
 ---
 
