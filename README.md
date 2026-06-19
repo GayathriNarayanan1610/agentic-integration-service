@@ -26,15 +26,6 @@ When a support request arrives, the agent:
 
 The LLM chooses each step via tool/function calling. Nothing about the sequence is hard-coded.
 
-```mermaid
-graph LR
-    START --> agent
-    agent -->|read tool| tools
-    agent -->|create_ticket| approval
-    agent -->|done| END
-    tools --> agent
-    approval -->|"interrupt() if high value"| approval
-    approval --> agent
 ```
 
 `agent` = the LLM. `tools` = safe reads. `approval` = the gated write that can pause for a human.
