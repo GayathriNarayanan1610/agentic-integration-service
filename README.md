@@ -86,7 +86,7 @@ can run it in one command.
 
 ## Run it
 
-### Option A — Docker 
+### Option A - Docker 
 
 ```bash
 cp .env.example .env
@@ -94,7 +94,7 @@ docker compose up --build
 # API on http://localhost:8000  (defaults to LLM_MODE=mock)
 ```
 
-### Option B — local
+### Option B - local
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
